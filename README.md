@@ -70,7 +70,7 @@ docker build -t droidrecon .
 ### Option 2: Pull from Docker Hub
 
 ```bash
-docker pull ThiagoShade/droidrecon:latest
+docker pull docker.io/thiagoshade/droidrecon:latest
 ```
 
 ### Run the container
