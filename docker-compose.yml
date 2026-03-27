@@ -1,0 +1,18 @@
+services:
+  apk-analyzer:
+    build: .
+    ports:
+      - "8000:8000"
+    volumes:
+      - apk-storage:/apks
+      - mobsf-data:/home/mobsf/.MobSF
+    environment:
+      # Override MobSF credentials if desired
+      - DJANGO_SUPERUSER_USERNAME=mobsf
+      - DJANGO_SUPERUSER_PASSWORD=mobsf
+      # Set a static API key (optional, auto-generated otherwise)
+      # - MOBSF_API_KEY=your_key_here
+
+volumes:
+  apk-storage:
+  mobsf-data:

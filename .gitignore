@@ -1,0 +1,21 @@
+# Downloaded APKs and analysis reports (use Docker volumes for persistence)
+/apks/
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+
+# Docker
+.dockerenv
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
