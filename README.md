@@ -75,12 +75,22 @@ docker pull docker.io/thiagoshade/droidrecon:latest
 
 ### Run the container
 
+#### If you build from source
 ```bash
 docker run -d --name droidrecon \
   -p 8000:8000 \
   -v apk-storage:/apks \
   -v mobsf-data:/home/mobsf/.MobSF \
   droidrecon
+```
+
+#### If you pull from Docker Hub
+```bash
+docker run -d --name droidrecon \
+  -p 8000:8000 \
+  -v apk-storage:/apks \
+  -v mobsf-data:/home/mobsf/.MobSF \
+  thiagoshade/droidrecon
 ```
 
 ### Analyze your first target
