@@ -26,7 +26,7 @@
 
 ---
 
-> **DroidRecon** automates the static security analysis of Android applications from the Google Play Store. Provide a package name, get a full MobSF security report. Designed to fit into Red Team enumeration pipelines with zero friction.
+> **DroidRecon** automates the static security analysis of Android applications from the Google Play Store. Provide a package name, get a MobSF security report. Designed to fit into Red Team enumeration pipelines with zero friction.
 
 ## Disclaimer
 
@@ -39,7 +39,7 @@ DroidRecon chains two open source tools inside a single Docker container:
 1. **[gplay-apk-downloader](https://github.com/alltechdev/gplay-apk-downloader)** - Downloads the target APK directly from Google Play using anonymous authentication (no Google account required)
 2. **[MobSF](https://github.com/MobSF/Mobile-Security-Framework-MobSF)** - Performs comprehensive static analysis on the downloaded APK, covering OWASP Mobile Top 10, code analysis, manifest review, and more
 
-The result: **one command** takes you from a package name to a full security report.
+The result: **one command** takes you from a package name to a MobSF security report.
 
 ```
 Package Name ──> Download APK ──> Static Analysis ──> JSON + PDF Reports
